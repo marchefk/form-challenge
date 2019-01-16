@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="master.css" media="screen">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>masteralb</title>
+</head>
+
+<body>
+    <img src="./img/logo-top.png" alt="Company logo" class="img-logo" />
+    <div class="main-container">
+    <!-- Register Form -->
+    <div class="register-wrapper wrapper">
+      <h2>Register Form</h2>
+      <form class="register-content form-container">
+        <div class="input-container">
+          <i class="fa fa-user icon"></i>
+          <input class="input-field" type="text" name="username" placeholder="Username" required></input>
+        </div>
+        <div class="input-container">
+          <i class="fa fa-unlock-alt icon"></i>
+          <input class="input-field" type="password" name="password" placeholder="Password" required></input>
+        </div>
+        <div class="input-container">
+          <i class="fa fa-unlock-alt icon"></i>
+          <input class="input-field" type="password" name="confirm-password" placeholder="Confirm password" required></input>
+        </div>
+        <div class="input-container">
+          <i class="fa fa-envelope icon"></i>
+          <input class="input-field" type="email" name="email" placeholder="Email" required></input>
+        </div>
+        <div class="input-container">
+          <i class="fa fa-map-marker icon"></i>
+          <select class="input-field" name="Location">
+            <option value="" disabled selected hidden>Your location</option>
+            <option value="Belgium">Belgium</option>
+            <option value="France">France</option>
+            <option value="Germany">Germany</option>
+            <option value="Poland">Poland</option>
+          </select>
+        </div>
+        <input type="checkbox" name="agreement" required /><label for="checkbox" class="label-checkbox"> I have read and accept the terms of use.</label>
+        <button class="button-accept" type="submit" value="submit">Sign Up</button>
+      </form>
+    </div>
+    <!-- Send Email -->
+    <div class="sendEmail-wrapper wrapper">
+      <h2>Send Email</h2>
+      <form class="sendEmail-content form-container">
+        <div class="input-container">
+          <i class="fa fa-user icon"></i>
+          <input class="input-field" type="text" name="name" placeholder="Your Name" required></input>
+        </div>
+        <div class="input-container">
+          <i class="fa fa-envelope icon"></i>
+          <input class="input-field" type="email" name="email" placeholder="Your Email" required></input>
+        </div>
+        <input class="input-field input-message" type="text" name="message" placeholder="Type your message..." required></input>
+        <input type="checkbox" name="copy of message" /><label for="checkbox" class="label-checkbox">Send a copy to my Email</label>
+        <button class="button-accept" type="submit" value="submit">Send Email</button>
+      </form>
+    </div>
+    <!-- Sign In Form -->
+    <div class="signIn-wrapper wrapper">
+      <h2>Sign In Form</h2>
+      <form class="signIn-content form-container">
+        <div class="input-container">
+          <i class="fa fa-user icon"></i>
+          <input class="input-field" type="text" name="username" placeholder="Username" required></input>
+        </div>
+        <div class="input-container">
+          <i class="fa fa-unlock-alt icon"></i>
+          <input class="input-field" type="password" name="password" placeholder="Password" required></input>
+        </div>
+        <input type="checkbox" name="remember" /><label for="checkbox" class="label-checkbox">Remember me</label>
+        <button class="button-accept" type="submit" name="submit">Sign in</button>
+      </form>
+    </div>
+    <!-- Recover Form -->
+    <div class="recover-wrapper wrapper">
+      <h2>Recover Form</h2>
+      <form class="recover-content form-container">
+        <div class="input-container">
+          <i class="fa fa-envelope icon"></i>
+          <input class="input-field" type="email" name="email" placeholder="Enter your Email" required></input>
+        </div>
+        <div class="input-container">
+          <i class="fa fa-mobile-alt icon"></i>
+          <input class="input-field" type="tel" name="telephone" placeholder="Enter your Phone number" required></input>
+        </div>
+        <button class="button-accept" type="submit" name="submit">Send</button>
+        <button class="button-accept" type="button" name="button">Done</button>
+      </form>
+    </div>
+    <!-- Subscribe Form -->
+    <div class="subscribe-wrapper wrapper">
+      <h2>Subscribe Form</h2>
+      <form class="subsribe-content form-container">
+        <div class="input-container">
+          <i class="fa fa-envelope icon"></i>
+          <input class="input-field" type="email" name="email" placeholder="Email" required></input>
+        </div>
+        <button class="button-accept" type="submit" name="submit">Subscribe</button>
+        <button class="button-reject" type="button" name="button">No, thanks</button>
+      </form>
+    </div>
+    <img src="./img/logo-footer.png" alt="Company logo" class="img-logo" />
+  </div>
+</body>
+
+</html>
