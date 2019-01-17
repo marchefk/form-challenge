@@ -46,14 +46,14 @@ h2 {
 .form-container {
   background-color: #f4f4f4;
   box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, 0.3);
-  padding: 10px;
+  padding: 16px;
   color: #afafaf; }
 
 .input-container {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   border-radius: 4px;
   border: 1px solid #c6c6c6;
   background: #f8f8f8;
@@ -84,7 +84,8 @@ h2 {
   margin: 1px;
   padding: 6px 12px;
   color: #afafaf;
-  background-color: inherit; }
+  background-color: inherit;
+  height: 30px; }
   .input-field:focus {
     background-color: white; }
 
@@ -101,6 +102,16 @@ h2 {
 
 ::-webkit-input-placeholder {
   color: #afafaf; }
+
+input[type=checkbox], input[type=radio] {
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  position: relative;
+  bottom: 1px; }
+
+input[type=radio] {
+  bottom: 2px; }
 
 .label-checkbox {
   font-family: "Myriad Pro", sans-serif; }
@@ -142,5 +153,17 @@ button {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f65e70', endColorstr='#f03747',GradientType=0 );
   /* IE6-9 */
   border-color: #a2202a; }
+
+.button-primary {
+  width: 100%;
+  height: 36px; }
+
+.button-secondary {
+  width: 40%;
+  height: 32px; }
+
+.button-flex-wrapper {
+  display: flex;
+  justify-content: space-between; }
 
 /*# sourceMappingURL=master.css.map */

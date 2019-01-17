@@ -44,7 +44,7 @@
           </select>
         </div>
         <input type="checkbox" name="agreement" required /><label for="checkbox" class="label-checkbox"> I have read and accept the terms of use.</label>
-        <button class="button-accept" type="submit" value="submit">Sign Up</button>
+        <button class="button-accept button-primary" type="submit" value="submit">Sign Up</button>
       </form>
     </div>
     <!-- Send Email -->
@@ -61,7 +61,7 @@
         </div>
         <input class="input-field input-message" type="text" name="message" placeholder="Type your message..." required></input>
         <input type="checkbox" name="copy of message" /><label for="checkbox" class="label-checkbox">Send a copy to my Email</label>
-        <button class="button-accept" type="submit" value="submit">Send Email</button>
+        <button class="button-accept button-primary" type="submit" value="submit">Send Email</button>
       </form>
     </div>
     <!-- Sign In Form -->
@@ -76,8 +76,12 @@
           <i class="fa fa-unlock-alt icon"></i>
           <input class="input-field" type="password" name="password" placeholder="Password" required></input>
         </div>
-        <input type="checkbox" name="remember" /><label for="checkbox" class="label-checkbox">Remember me</label>
-        <button class="button-accept" type="submit" name="submit">Sign in</button>
+        <div class="button-flex-wrapper">
+          <div>
+            <input type="checkbox" name="remember" /><label for="checkbox" class="label-checkbox">Remember me</label>
+          </div>
+          <button class="button-accept button-secondary floater" type="submit" name="submit">Sign in</button>
+        </div>
       </form>
     </div>
     <!-- Recover Form -->
@@ -92,8 +96,10 @@
           <i class="fa fa-mobile-alt icon"></i>
           <input class="input-field" type="tel" name="telephone" placeholder="Enter your Phone number" required></input>
         </div>
-        <button class="button-accept" type="submit" name="submit">Send</button>
-        <button class="button-accept" type="button" name="button">Done</button>
+        <div class="button-flex-wrapper">
+          <button class="button-accept button-secondary" type="submit" name="submit">Send</button>
+          <button class="button-accept button-secondary floater" type="button" name="button">Done</button>
+        </div>
       </form>
     </div>
     <!-- Subscribe Form -->
@@ -104,8 +110,10 @@
           <i class="fa fa-envelope icon"></i>
           <input class="input-field" type="email" name="email" placeholder="Email" required></input>
         </div>
-        <button class="button-accept" type="submit" name="submit">Subscribe</button>
-        <button class="button-reject" type="button" name="button">No, thanks</button>
+        <div class="button-flex-wrapper">
+          <button class="button-accept button-secondary" type="submit" name="submit">Subscribe</button>
+          <button class="button-reject button-secondary" type="button" name="button">No, thanks</button>
+        </div>
       </form>
     </div>
     <img src="./img/logo-footer.png" alt="Company logo" class="img-logo" />
