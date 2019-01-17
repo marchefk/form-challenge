@@ -28,13 +28,24 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
-
-.wrapper {
-  margin: auto;
-  width: 80%; }
   @media (min-width: 700px) {
-    .wrapper {
-      width: 40%; } }
+    .main-container {
+      justify-content: space-evenly; } }
+  @media (min-width: 1000px) {
+    .main-container {
+      margin: auto;
+      width: 80%; } }
+  @media (min-width: 1500px) {
+    .main-container {
+      width: 70%; } }
+
+@media (max-width: 700px) {
+  .wrapper {
+    margin: auto;
+    width: 80%; } }
+@media (min-width: 701px) {
+  .wrapper {
+    width: 40%; } }
 
 h2 {
   font-family: "Titillium Web", sans-serif;
@@ -165,5 +176,13 @@ button {
 .button-flex-wrapper {
   display: flex;
   justify-content: space-between; }
+
+.logo-bottom {
+  height: 100%; }
+  @media (min-width: 701px) {
+    .logo-bottom {
+      width: 30%;
+      margin-left: 5%;
+      margin-right: 5%; } }
 
 /*# sourceMappingURL=master.css.map */
